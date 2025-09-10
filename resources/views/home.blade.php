@@ -1,18 +1,14 @@
 @extends('layouts.app')
 
 
-@section('content')
-<!DOCTYPE html>
-<html lang="it">
+    @section('content')
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HW1 - Home</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <meta name ="csrf-token" content="{{ csrf_token() }}">
 </head>
-<nav>
-    <a href="{{ route('home') }}">Home</a>
-</nav>
-<body>
+<html>
     
-</body>
+    <body class="body">
+         <h1>Benvenuto su Nvidia</h1>
+    </body>
 </html>
